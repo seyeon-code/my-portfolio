@@ -1,0 +1,81 @@
+/* 컬러 팔레트 디자인 시스템 - CSS 변수 (교육 플랫폼 기반 스카이블루 팔레트) */
+:root {
+  /* Primary Colors */
+  --color-primary: #1E9FD9;
+  --color-primary-light: #4DB8E8;
+  --color-primary-dark: #0E7DB5;
+
+  /* Secondary Colors */
+  --color-secondary: #E8F4FD;
+  --color-accent: #FFCC00;
+
+  /* Background Colors */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #E8F4FD;
+  --color-bg-subtle: #D6EEF9;
+
+  /* Text Colors */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #555555;
+  --color-text-muted: #909090;
+  --color-text-on-dark: #FFFFFF;
+
+  /* Border / Outline */
+  --color-border: #C8E6F5;
+  --color-border-light: #E0F2FC;
+
+  /* Interactive Colors */
+  --color-button-primary: #1E9FD9;
+  --color-button-hover: #0E7DB5;
+  --color-link: #1E9FD9;
+  --color-link-hover: #0E7DB5;
+
+  /* Accent Mint */
+  --color-accent-mint: #2DC890;
+
+  /* Footer */
+  --color-footer-bg: #D6EEF9;
+  --color-footer-text: #1A1A1A;
+}
+
+/* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #0D1B2A;
+    --color-bg-secondary: #122338;
+    --color-bg-subtle: #1A3050;
+    --color-text-primary: #E8F4FD;
+    --color-text-secondary: #A8C8DF;
+    --color-text-muted: #6A9AB5;
+    --color-primary: #4DB8E8;
+    --color-primary-light: #72CDF0;
+    --color-primary-dark: #1E9FD9;
+    --color-border: #1E3D55;
+    --color-border-light: #254D6A;
+    --color-footer-bg: #0D1B2A;
+    --color-footer-text: #E8F4FD;
+  }
+}
+
+/* 고대비 모드 */
+@media (prefers-contrast: high) {
+  :root {
+    --color-text-primary: #000000;
+    --color-text-secondary: #333333;
+    --color-primary: #0060A0;
+    --color-bg-primary: #FFFFFF;
+    --color-border: #444444;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
