@@ -139,7 +139,7 @@ const ContactSection = () => {
   return (
     <Box
       sx={{
-        background: 'linear-gradient(135deg, #0E7DB5 0%, #1E9FD9 50%, #4DB8E8 100%)',
+        background: 'linear-gradient(135deg, #1255A8 0%, #1976D2 50%, #2196F3 100%)',
         py: { xs: 10, md: 14 },
         position: 'relative',
         overflow: 'hidden',
